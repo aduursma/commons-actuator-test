@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>nl.agility.maven</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>nl.agility.commons</groupId>
+    <artifactId>commons-actuator-test</artifactId>
+    <version>1.0.0-${revision}</version>
+
+    <name>Agility IT Services - Commons Actuator TEST</name>
+    <description>Commons Actuator TEST contains base classes for writing Spring Boot Actuator integration testcases</description>
+
+    <scm>
+        <url>https://github.com/aduursma/commons-actuator-test</url>
+        <connection>scm:git:git://github.com/aduursma/commons-actuator-test.git</connection>
+        <developerConnection>scm:git:git@github.com:aduursma/commons-actuator-test.git</developerConnection>
+    </scm>
+
+    <properties>
+        <revision>SNAPSHOT</revision>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
+</project>
